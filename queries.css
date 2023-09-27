@@ -1,0 +1,224 @@
+@media screen and (min-width: 425px) {
+
+  section video {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 565px) {
+
+  .sectionTitle img {
+    width: 300px;
+  }
+
+  .card {
+    flex-direction: row;
+    margin: 10px 50px;
+  }
+
+  .card .cardTitle {
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .card .cardDesc {
+    width: 60%;
+  }
+
+  .cvContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cv img {
+    width: 50%;
+  }
+
+  .acordeon .contenedor.activa .contenido {
+    height: 230px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .sectionTitle h2 {
+    font-size: 4rem;
+  }
+
+  #three h3 {
+    font-size: 1.5rem;
+  }
+
+  .sectionTitle h3 {
+    font-size: 2.5rem;
+  }
+
+  #participateBtn {
+    margin: 80px;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+  }
+
+  #participateBtn span {
+    font-size: 1.3rem;
+  }
+
+  #countDown {
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-evenly;
+    bottom: -50px;
+  }
+
+  .watch div {
+    width: 80px;
+  }
+
+  .spindle {
+    margin: 30px 0 60px;
+  }
+
+  .characts {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 30%;
+    height: 320px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .card .cardTitle {
+    width: 100%;
+    margin: 0;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card .cardDesc {
+    width: 100%;
+  }
+
+  .circles {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .circleContainer {
+    width: 200px;
+  }
+
+  .dataContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .expertContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 70%;
+  }
+
+  .expertContainer .sectionTitle,
+  .expertDesc {
+    width: 50%;
+    text-align: start;
+  }
+
+  .expertDesc{
+    align-self: end;
+  }
+
+  .detailsData, .opinionData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .moduleDetail {
+    margin: 20px;
+  }
+
+  .opinionData {
+    width: 80%;
+  }
+
+  .expects img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .acordeon .contenedor.activa .contenido {
+    height: 180px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  section>div {
+    width: 100%;
+  }
+
+  section video {
+    height: 500px;
+    object-fit: cover;
+    margin-top: 50px;
+  }
+
+  .characts, #three .sectionTitle {
+    justify-content: center;
+    width: 70%;
+  }
+
+  .circleContainer {
+    width: 350px;
+    margin-top: 50px;
+  }
+
+  .dataContainer {
+    width: 70%;
+  }
+
+  .cvContainer {
+    width: 70%;
+  }
+
+  .detailsData {
+    margin: 60px 0 0;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .expectData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  .expectData img {
+    margin: 0;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .faqsData {
+    width: 70%;
+  }
+
+  .acordeon .contenedor.activa .contenido {
+    height: 200px;
+  }
+}
