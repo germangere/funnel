@@ -5,7 +5,6 @@
   --pink: #FF6969;
   --red: #BB2525;
   --navy: #141E46;
-
 }
 
 * {
@@ -19,10 +18,31 @@ a {
   text-decoration: none;
 }
 
+.arrow {
+  display: none;
+}
+
+.relative {
+  display: inline-block;
+  position: relative
+}
+
 #one,
 #three {
   padding: 50px 0;
   background: var(--beige);
+}
+
+#one {
+  padding-bottom: 100px;
+}
+
+#one video {
+  margin-bottom: 50px;
+}
+
+#one h2 {
+  margin-top: 30px;
 }
 
 #three {
@@ -32,6 +52,10 @@ a {
 #three h3 {
   font-size: 1.2rem;
   padding-top: 30px;
+}
+
+#three video {
+  margin-top: 100px;
 }
 
 section {
@@ -73,32 +97,16 @@ section>div {
   text-decoration: underline;
 }
 
-.sectionTitle img {
-  width: 80%;
-  height: 10px;
-  opacity: 0.8;
-  transform: rotate(-3deg);
-  filter: brightness(0);
-}
-
-.tick {
-  display: none;
-  background-image: url('./assests/img/tick.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  background-position: right;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  right: 0;
-}
-
 section video {
   width: 150%;
 }
 
-#participateBtn {
+.cta {
+  display: flex;
+  position:relative;
+}
+
+.participateBtn {
   background-color: var(--red);
   color: var(--beige);
   border-radius: 10px;
@@ -108,11 +116,27 @@ section video {
   box-shadow: 0 0 20px gray;
   font-size: 1.2rem;
   font-weight: 600;
+  transition: 0.2s
 }
 
-#participateBtn span {
+.participateBtn span {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.participateBtn:hover{
+  box-shadow: 0 0 40px gray;
+  transform: scale(1.03);
+  /* filter: brightness(105%); */
+  background-color: var(--pink);
+  color: var(--navy)
+}
+
+.participateBtn:active{
+  box-shadow: none;
+  transform: none;
+  filter: none;
+  background-color: var(--navy);
 }
 
 #countDown {
@@ -156,7 +180,7 @@ section video {
 }
 
 #two {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 
 #two .sectionTitle img {
@@ -166,15 +190,17 @@ section video {
 
 .spindle {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
+  text-align: center;
+  width: 90%;
 }
 
 .spindle img {
   width: 40px;
-  margin: 0 10px;
+  margin: 30px 10px;
 }
 
 .characts {
@@ -186,11 +212,17 @@ section video {
   border: 2px solid var(--pink);
   background-color: var(--beige);
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.15s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px var(--pink);
+  transform: scale(1.02);
 }
 
 .card .cardTitle {
@@ -342,6 +374,12 @@ section video {
   width: 90%;
   margin: 60px auto;
   border: 1px solid var(--pink);
+  transition: 0.15s;
+}
+
+.moduleDetail:hover {
+  box-shadow: 0 0 20px var(--pink);
+  transform: scale(1.02);
 }
 
 .moduleDetail h4 {
@@ -374,6 +412,12 @@ section video {
   padding: 10px;
   width: 90%;
   margin: 20px auto;
+  transition: 0.15s
+}
+
+.opinion:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px  var(--pink);
 }
 
 .opinion div {
@@ -408,8 +452,9 @@ section video {
 }
 
 .faqs {
-background-color: var(--navy);
-color: var(--beige)
+  background-color: var(--navy);
+  color: var(--beige);
+  padding: 50px 0 80px;
 }
 
 .acordeon {
@@ -466,4 +511,33 @@ color: var(--beige)
 .acordeon .contenedor.activa .etiqueta::before {
   content: '-';
   font-size: 40px;
+}
+
+footer {
+  background-color: var(--pink);
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.author {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.social a {
+  color: var(--navy);
+  font-size: 2rem;
+  margin: 10px;
+  transition: 0.15s;
+}
+
+.social a:hover {
+  color: var(--beige);
+  text-shadow: 0 0 10px var(--beige);
 }

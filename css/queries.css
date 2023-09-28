@@ -12,9 +12,42 @@
     width: 300px;
   }
 
+  .arrowCta1 {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    z-index: 9;
+    background-image: url(../assests/img/arrow/arrow_navy.png);
+    transform: rotate(150deg);
+    right: -140px;
+    top: 50px;
+  }
+
+  .arrowCta2 {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    z-index: 9;
+    background-image: url(../assests/img/arrow/arrow_navy.png);
+    transform: rotate(35deg) rotateX(180deg);
+    left: -140px;
+    top: 50px
+  }
+
+  .ctap {
+    background-image: url(../assests/img/arrow/arrow_pink.png);
+
+  }
+
   .card {
     flex-direction: row;
-    margin: 10px 50px;
+    margin: 20px 50px;
   }
 
   .card .cardTitle {
@@ -45,25 +78,35 @@
 
 @media screen and (min-width: 768px) {
 
-  .sectionTitle h2 {
+  .sectionTitle h2, .title h2 {
     font-size: 4rem;
   }
 
-  #three h3 {
+  #three h3, .title h3  {
     font-size: 1.5rem;
+  }
+
+  .arrowCta1 {
+    right: -90px;
+    top: 100px;
+  }
+
+  .arrowCta2 {
+    left: -90px;
+    top: 100px
   }
 
   .sectionTitle h3 {
     font-size: 2.5rem;
   }
 
-  #participateBtn {
+  .participateBtn {
     margin: 80px;
     padding: 20px 40px;
     font-size: 1.8rem;
   }
 
-  #participateBtn span {
+  .participateBtn span {
     font-size: 1.3rem;
   }
 
@@ -79,7 +122,12 @@
   }
 
   .spindle {
+    flex-direction: row;
     margin: 30px 0 60px;
+  }
+
+  .spindle img {
+    margin: 30px 20px
   }
 
   .characts {
@@ -90,7 +138,7 @@
   .card {
     width: 30%;
     height: 320px;
-    margin: 10px;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -162,12 +210,41 @@
     height: 180px;
   }
 
+  form {
+    width: 50%;
+  }
+
+  .flex {
+    justify-content: space-evenly;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
 
   section>div {
     width: 100%;
+  }
+
+  .arrow {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    z-index: 9;
+  }
+
+  #arrowP1 {
+    transform: rotate(90deg) scaleX(160%);
+    background-image: url(../assests/img/arrow/arrow_navy.png);
+    right: -200px;
+    bottom: 0;
   }
 
   section video {
@@ -178,7 +255,7 @@
 
   .characts, #three .sectionTitle {
     justify-content: center;
-    width: 70%;
+    width: 80%;
   }
 
   .circleContainer {
@@ -221,4 +298,5 @@
   .acordeon .contenedor.activa .contenido {
     height: 200px;
   }
+
 }

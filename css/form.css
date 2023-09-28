@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Roboto+Slab:wght@100;400;600;900&display=swap');
+
+:root {
+  --beige: #FFF5E0;
+  --pink: #FF6969;
+  --red: #BB2525;
+  --navy: #141E46;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 20vh;
+  background-color: var(--navy);
+  color: var(--beige);
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+h1 {
+  margin-left: 30px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1:hover {
+  background-color: var(--beige);
+  color: var(--navy);
+}
+
+main {
+  min-height: 60vh;
+  background-color: var(--beige);
+  padding-bottom: 80px
+}
+
+.title h2 {
+  font-size: 2.5rem;
+}
+
+.title h3 {
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 80%;
+  margin: 30px;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  margin-top: 20px
+}
+
+.title span {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+form {
+  width: 90%;
+  gap:20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+input:not([type="button"]) {
+  border: none;
+  border-bottom: 1px solid var(--red);
+  background-color: var(--beige);
+  width: 100%;
+}
+
+input:not([type="button"]):focus {
+  outline: none;
+  border-left: 2px solid var(--red);
+
+}
+
+input[type="button"]{
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  background-color: var(--navy);
+  color: var(--beige);
+  margin-top: 30px;
+  font-weight:600;
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+input[type="button"]:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--pink);
+}
+
+
+footer {
+  background-color: var(--pink);
+  height: 20vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.author {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--navy);
+  font-size: 2rem;
+  margin: 10px;
+  transition: 0.15s;
+}
+
+.social a:hover {
+  color: var(--beige);
+  text-shadow: 0 0 10px var(--beige);
+}

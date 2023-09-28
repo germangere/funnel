@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assests/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./queries.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/queries.css">
   <title>Webinar</title>
 </head>
 
@@ -15,15 +15,20 @@
     <section id="one">
       <div>
         <div class="sectionTitle">
-          <div class="tick"></div>
           <h3>Logre un <span>flujo ilimitado</span> de alumnos</h3>
           <h3><span>Capte y retenga</span> estudiantes a sus cursos</h3>
-          <h2>Multiplique <span>Matrícula</span></h2>
+          <div class="relative">
+            <h2>Multiplique <span>Matrícula</span></h2>
+            <div id="arrowP1" class="arrow"></div>
+          </div>
         </div>
         <video src="./assests/video/vieoStats.webm" autoplay muted loop></video>
-        <a id="participateBtn" href="">
-          CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
-        </a>
+        <div class="cta">
+          <a class="participateBtn" href="./pages/form.html">
+            CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
+          </a>
+          <div class="arrow arrowCta2"></div>
+        </div>
         <div id="countDown">
           <div>
             <p>Faltan</p>
@@ -31,19 +36,19 @@
           <div id="flecha"></div>
           <div class="watch">
             <div>
-              <p class="num">86</p>
+              <p class="num" id="days">86</p>
               <p class="time">Días</p>
             </div>
             <div>
-              <p class="num">04</p>
+              <p class="num" id="hours">04</p>
               <p class="time">Horas</p>
             </div>
             <div>
-              <p class="num">28</p>
+              <p class="num" id="minutes">28</p>
               <p class="time">Minutos</p>
             </div>
             <div>
-              <p class="num">10</p>
+              <p class="num" id="seconds">10</p>
               <p class="time">Segundos</p>
             </div>
           </div>
@@ -57,7 +62,9 @@
         <h3>Comparta una jornada entera con el <span>pionero del marketing</span> educativo en la era de la IA</h3>
       </div>
       <div class="spindle">
-        <img src="./assests/img/huso.png" alt="relojes huso horario">
+        <figure>
+          <img src="./assests/img/huso.png" alt="relojes huso horario">
+        </figure>
         <p>Sábado 28/10 - 9am - Hora de Chicago/Dallas/Ciudad de México</p>
       </div>
       <div class="characts">
@@ -104,7 +111,7 @@
       <div class="circles">
         <div class="circleContainer">
           <div class="circleImg">
-            <img src="./assests/img/grupo-de-chat.png" alt="icono grupo de personas">
+            <img src="./assests/img/estrategias/grupo-de-chat.png" alt="icono grupo de personas">
           </div>
           <div class="circleTitle">
             <h4>Atraer</h4>
@@ -115,7 +122,7 @@
         </div>
         <div class="circleContainer">
           <div class="circleImg">
-            <img src="./assests/img/bombilla.png" alt="icono foco encendido">
+            <img src="./assests/img/estrategias/bombilla.png" alt="icono foco encendido">
           </div>
           <div class="circleTitle">
             <h4>Captar</h4>
@@ -126,7 +133,7 @@
         </div>
         <div class="circleContainer">
           <div class="circleImg">
-            <img src="./assests/img/planta.png" alt="icono planta en crecimiento en la palma de una mano">
+            <img src="./assests/img/estrategias/planta.png" alt="icono planta en crecimiento en la palma de una mano">
           </div>
           <div class="circleTitle">
             <h4>Fidelizar</h4>
@@ -136,9 +143,14 @@
             sentido de pertenencia a su entidad. Genere una relación cercana y de confianza.</div>
         </div>
       </div>
-      <a id="participateBtn" href="">
-        CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
-      </a>
+      <div>
+        <div class="cta">
+          <div class="arrow arrowCta1"></div>
+          <a class="participateBtn" href="./pages/form.html">
+            CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="webinarData">
@@ -167,7 +179,9 @@
             tenetur eligendi expedita, dolore accusamus blanditiis laborum dicta optio repellendus, adipisci amet
             minima! Quis aut voluptas nesciunt officia animi repudiandae placeat aliquid consectetur ad molestias eos
             corporis necessitatibus illum possimus consequuntur iusto odit ut sunt, sequi cumque alias eius. Similique
-            et tempore provident, illo aliquid illum quibusdam perspiciatis! A ullam ex obcaecati esse iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus quae eius, necessitatibus impedit accusantium rem, suscipit atque illo repellat quod aliquam beatae molestias recusandae maxime.</p>
+            et tempore provident, illo aliquid illum quibusdam perspiciatis! A ullam ex obcaecati esse iure. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Officiis possimus quae eius, necessitatibus impedit accusantium
+            rem, suscipit atque illo repellat quod aliquam beatae molestias recusandae maxime.</p>
         </div>
       </div>
     </section>
@@ -257,9 +271,14 @@
             </div>
           </div>
         </div>
-        <a id="participateBtn" href="">
-          CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
-        </a>
+        <div>
+          <div class="cta">
+            <a class="participateBtn" href="./pages/form.html">
+              CLICK PARA PARTICIPAR <br><span>Aparte su lugar sin compromiso</span>
+            </a>
+            <div class="arrow arrowCta2 ctap"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -460,9 +479,26 @@
       </div>
       </div>
     </section>
-
   </main>
-  <script src="./index.js"></script>
+  <footer>
+    <div class="author">
+      <p>© Desarrollado por Germán Geredus</p>
+    </div>
+    <div class="social">
+      <a href="mailto:germangere@gmail.com" target="_blank">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/germangere" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/germangere" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/e2b02d9e00.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
