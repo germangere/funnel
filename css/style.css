@@ -435,6 +435,12 @@ section video {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: 0.15s;
+}
+
+.expects img:hover {
+  box-shadow: 0 0 20px var(--navy);
+  transform: scale(1.03)
 }
 
 .expects span {
@@ -462,6 +468,7 @@ section video {
   margin: 40px auto;
   color: black;
   background-color: var(--beige);
+  border-radius: 20px;
 }
 
 .acordeon .contenedor {
