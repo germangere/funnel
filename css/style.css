@@ -86,7 +86,7 @@ section>div {
 }
 
 .sectionTitle {
-  width: 80%;
+  width: 95%;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
@@ -175,8 +175,6 @@ section video {
 .webinarData {
   background: var(--navy);
   color: var(--beige);
-  padding-top: 100px;
-  padding-bottom: 80px;
 }
 
 #two {
@@ -285,7 +283,7 @@ section video {
 }
 
 .dataContainer {
-  margin: 150px 10px;
+  margin: 100px 10px;
 }
 
 .dataTitle {

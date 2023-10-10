@@ -122,11 +122,11 @@
   }
 
   .spindle {
-    flex-direction: row;
     margin: 30px 0 60px;
   }
 
   .spindle img {
+    width: 100px;
     margin: 30px 20px
   }
 
@@ -175,7 +175,7 @@
     display: flex;
     flex-direction: row;
     margin: 20px;
-    width: 70%;
+    width: 90%;
   }
 
   .expertContainer .sectionTitle,
@@ -192,6 +192,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+
 
   .moduleDetail {
     margin: 20px;
@@ -247,6 +249,13 @@
     bottom: 0;
   }
 
+  #arrowP2 {
+    transform: rotate(90deg) rotateX(180deg) scaleX(160%);
+    background-image: url(../assests/img/arrow/arrow_navy.png);
+    left: -200px;
+    bottom: 0;
+  }
+
   section video {
     height: 500px;
     object-fit: cover;
@@ -267,6 +276,10 @@
     width: 70%;
   }
 
+  .expertContainer {
+    width: 70%;
+  }
+
   .cvContainer {
     width: 70%;
   }
@@ -283,6 +296,10 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 20px;
+  }
+
+  .opinion{
+    margin: 40px 0;
   }
 
   .expectData img {
