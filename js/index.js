@@ -30,10 +30,16 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-const acordeon = document.getElementsByClassName('contenedor');
+const acordeon = document.querySelectorAll('.contenedor');
 
-for (i = 0; i < acordeon.length; i++) {
-  acordeon[i].addEventListener('click', function () {
+acordeon.forEach(element => {
+  const contenido = element.querySelector('.contenido')
+  element.addEventListener('click', function () {
     this.classList.toggle('activa')
+    if (element.classList.contains('activa')) {
+      contenido.style.height = contenido.scrollHeight + 'px'
+    } else {
+      contenido.style.height = '0'
+    }
   })
-}
+})

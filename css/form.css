@@ -89,20 +89,20 @@ input {
 }
 
 
-input:not([type="button"]) {
+input:not([type="submit"]) {
   border: none;
   border-bottom: 1px solid var(--red);
   background-color: var(--beige);
   width: 100%;
 }
 
-input:not([type="button"]):focus {
+input:not([type="submit"]):focus {
   outline: none;
   border-left: 2px solid var(--red);
 
 }
 
-input[type="button"]{
+input[type="submit"]{
   border: 1px solid var(--red);
   border-radius: 10px;
   background-color: var(--navy);
@@ -115,38 +115,7 @@ input[type="button"]{
   cursor: pointer;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--pink);
-}
-
-
-footer {
-  background-color: var(--pink);
-  height: 20vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.author {
-  font-size: 1.2rem;
-  text-align: center;
-  color: var(--navy);
-  font-weight: 700;
-}
-
-.social a {
-  text-decoration: none;
-  color: var(--navy);
-  font-size: 2rem;
-  margin: 10px;
-  transition: 0.15s;
-}
-
-.social a:hover {
-  color: var(--beige);
-  text-shadow: 0 0 10px var(--beige);
 }
