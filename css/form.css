@@ -78,6 +78,86 @@ h3 {
   text-decoration: underline;
 }
 
+
+#costos {
+  width: 100%;
+}
+
+.tablaCostos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.tablaCostos>div{
+  background-color: var(--red);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--navy)
+}
+
+.encTabla {
+  color: var(--beige);
+}
+
+.encTabla h4 {
+  font-size: 2rem;
+  padding: 30px;
+}
+
+.hasta {
+  color: var(--pink);
+  font-size: 1.4rem;
+}
+
+#promo {
+  background-color: var(--navy);
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+#off25 {
+  font-size:2rem;
+  margin: 0 0 20px;
+  color: var(--beige);
+  text-shadow: 0 0 10px var(--beige);
+}
+
+#creditCards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#creditCards img {
+  height: 30px;
+  margin: 10px;
+}
+
+.datosPago {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+/* .datosPago div:not(:last-child) {
+  border-bottom: 1px solid var(--navy);
+} */
+.datosPago div{
+  padding: 40px;
+}
+
+.datosPago hr {
+  color: var(--navy);
+  width: 100%;
+}
+.datosPago p {
+  margin: 15px
+}
+
 form {
   width: 90%;
   gap:20px;
@@ -118,4 +198,24 @@ input[type="submit"]{
 input[type="submit"]:hover{
   transform: scale(1.05);
   box-shadow: 0 0 20px var(--pink);
+}
+
+@media screen and (min-width: 768px) {
+
+  .tablaCostos{
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  #promo {
+    grid-column: 1 / 4;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tablaCostos{
+    width: 80%;
+  }
 }

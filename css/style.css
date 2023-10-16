@@ -593,12 +593,12 @@ footer h2 {
   margin: 15px 5px;
 }
 
-.contactData a {
+footer a {
   color: var(--navy);
   transition: 200ms;
 }
 
-.contactData a:hover {
+footer a:hover {
   transition: 200ms;
   text-decoration: underline;
   font-weight: 600;
