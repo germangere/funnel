@@ -406,6 +406,34 @@ section video {
   margin-bottom: 50px;
 }
 
+#instituciones {
+  margin-top: 50px;
+  width: 95vw;
+  overflow-x: hidden;
+}
+
+#instituciones>div {
+  width: max-content;
+  display: flex;
+  column-gap: 150px;
+  justify-content: start;
+  animation: slider 30s linear infinite;
+}
+
+#instituciones img {
+  height: 100px;
+  object-fit: contain;
+}
+
+@keyframes slider {
+  from{
+    transform: translate(100vw);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
 .opinion {
   background-color: var(--navy);
   border: 1px solid var(--pink);
