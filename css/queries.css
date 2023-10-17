@@ -260,6 +260,17 @@
 
 @media screen and (min-width: 1024px) {
 
+  #whatsapp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 3;
+  }
+
+  #whatsapp img {
+    width: 70px;
+  }
+
   section>div {
     width: 100%;
   }
