@@ -503,6 +503,72 @@ section video {
   width: 90%;
 }
 
+#costos {
+  width: 100%;
+  background-color: var(--beige);
+  padding-bottom: 40px;
+}
+
+.tablaCostos {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10px;
+}
+
+.tablaCostos>div{
+  background-color: var(--red);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--navy)
+}
+
+.encTabla {
+  color: var(--beige);
+}
+
+.encTabla h4 {
+  font-size: 2rem;
+  padding: 30px;
+  letter-spacing: 2px;
+}
+
+.hasta {
+  color: var(--pink);
+  font-size: 1.4rem;
+}
+
+#promo {
+  margin-top: 10px;
+  align-self: start;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+  background-color: var(--navy);
+  color: var(--pink);
+  border-color: var(--pink);
+}
+
+#off25 {
+  font-size:2rem;
+  margin: 0 0 10px;
+  color: var(--beige);
+  text-shadow: 0 0 10px var(--beige);
+}
+
+#creditCards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#creditCards img {
+  height: 30px;
+  margin: 10px;
+}
+
 .faqs {
   background-color: var(--navy);
   color: var(--beige);
@@ -565,6 +631,7 @@ section video {
 footer {
   background-color: var(--pink);
   padding: 30px;
+  padding-bottom: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -244,6 +244,17 @@
     object-fit: cover;
   }
 
+  .tablaCostos{
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr auto;
+    column-gap: 30px;
+    justify-content: center;
+  }
+
+  #promo {
+    grid-column: 1 / 4;
+  }
+
   .acordeon .contenedor.activa .contenido {
     height: 180px;
   }
@@ -340,8 +351,12 @@
 
   .expectData img {
     margin: 0;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
+  }
+
+  .tablaCostos{
+    width: 80%;
   }
 
   .faqsData {
