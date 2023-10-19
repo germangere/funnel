@@ -516,7 +516,7 @@ section video {
   gap: 10px;
 }
 
-.tablaCostos>div{
+.tablaCostos>div {
   background-color: var(--red);
   padding: 20px;
   text-align: center;
